@@ -1,2 +1,11 @@
 <h1>Images</h1>
-<%= @image.first.name %>
+
+<% @image = @image.reverse %>
+<% @image.each do |i| %>
+  <%= image_tag i.url, width: 400%>
+  </br>
+  </br>
+  <% end %>
+
+
+<%= link_to 'Add an Image', new_image_path %>
