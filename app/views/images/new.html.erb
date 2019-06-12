@@ -1,0 +1,15 @@
+<h1>Add an image</h1>
+
+<%= form_for @image, url: {action: 'create'} do |f| %>
+  <%= @image.errors.full_messages.to_sentence %>
+  <p>
+    <%= f.label :title %><br/>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :url %><br/>
+    <%= f.text_field :url %>
+  </p>
+  <%= f.submit %>
+<% end %>
+
