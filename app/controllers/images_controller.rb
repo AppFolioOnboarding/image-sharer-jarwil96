@@ -15,11 +15,10 @@ class ImagesController < ApplicationController
     img_params = params.require(:image).permit(:name, :url)
     @image = Image.new(img_params)
     if @image.save
+      flash[:success] = 'successfully added image'
       render :show
-      flash[:success] = "successfully added image"
     else
       render :new
     end
   end
-
 end
