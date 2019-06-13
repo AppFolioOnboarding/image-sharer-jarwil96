@@ -3,6 +3,8 @@
 <% @image = @image.reverse %>
 <% @image.each do |i| %>
   <%= image_tag i.url, width: 400%>
+  <br>
+  Tags: <%= i.tag_list %>
   </br>
   </br>
   <% end %>

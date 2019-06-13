@@ -1,3 +1,6 @@
 <h1>Viewing Image <%= @image.name %></h1>
 <%= flash[:success] %>  <br/>
 <%= image_tag @image.url %>
+<p>Tags: <%= @image.tag_list %></p>
+
+
