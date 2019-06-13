@@ -21,4 +21,9 @@ class ImagesController < ApplicationController
       render :new
     end
   end
+
+  def tagged
+    @image = Image.tagged_with(params[:tag])
+  end
+
 end

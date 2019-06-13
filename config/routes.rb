@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'images/index' => 'images#index'
   get 'images/:id/show' => 'images#show'
   get 'images/new' => 'images#new'
+  get '/tagged' => "images#tagged", as: :tagged
   resources :images
 end
