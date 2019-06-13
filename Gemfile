@@ -19,6 +19,8 @@ gem 'jquery-rails'
 
 gem 'webpacker', '~> 4'
 
+gem 'acts-as-taggable-on', '~> 6.0'
+
 gem 'simple_form'
 
 group :development, :test do
