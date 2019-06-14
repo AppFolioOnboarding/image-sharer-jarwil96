@@ -4,10 +4,13 @@
 <% @image.each do |i| %>
   <%= image_tag i.url, width: 400%>
   <br>
+
   Tags:
   <% i.tag_list.each do |t| %>
     <%= link_to t, tagged_path(tag: t) %>
-    <%end  %>
+    <%end %>
+  </br>
+  <%= link_to 'view', image_path(i) %>
   </br>
   </br>
   <% end %>
