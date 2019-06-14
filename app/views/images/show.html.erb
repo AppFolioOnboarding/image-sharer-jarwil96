@@ -1,10 +1,14 @@
-<h1>Viewing Image <%= @image.name %></h1>
+<h1>Viewing Image: <%= @image.name %></h1>
 <%= flash[:success] %>  <br/>
 <%= image_tag @image.url %>
 <p>Tags:
   <% @image.tag_list.each do |t| %>
   <%= link_to t, tagged_path(tag: t) %>
     <%end %>
+  <br>
+  <%= link_to "Delete", image_path(@image), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
 </p>
 
 
