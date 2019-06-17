@@ -21,5 +21,4 @@ class ImagesControllerTest < ActionDispatch::IntegrationTest
   end
 
 
-
 end

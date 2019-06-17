@@ -23,12 +23,14 @@ gem 'acts-as-taggable-on', '~> 6.0'
 
 gem 'simple_form'
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'pry'
   gem 'sqlite3'
+
 end
 
 group :development do
