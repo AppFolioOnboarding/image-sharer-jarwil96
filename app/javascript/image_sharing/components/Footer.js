@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Footer extends Component {
   /* Implement your Footer component here */
-<<<<<<< HEAD
+
   render() {
     var message = 'Copyright: AppFolio Inc. Onboarding';
     const pStyle = {
@@ -24,11 +24,4 @@ class Footer extends Component {
 }
 
 
-
-
-
-=======
-}
-
->>>>>>> afe3ae04a0c2bced0053d93ea781d4d31b354b6a
 export default Footer;

@@ -19,11 +19,11 @@ class Header extends Component {
           </Col>
         </Row>
       </div>
-<<<<<<< HEAD
+
     );
-=======
-    )
->>>>>>> afe3ae04a0c2bced0053d93ea781d4d31b354b6a
+
+
+
   }
 }
 
