@@ -8,7 +8,7 @@ const stores = {
   feedbackStore: new FeedbackStore()
 };
 
-/* Initialize your store here*/
+
 
 ReactDOM.render(
   <Provider stores={stores}>
